@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FormexaLab3D</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-gray-950/70 backdrop-blur-md border-b border-gray-700 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      
+      <h1 class="text-lg md:text-xl font-bold text-blue-400">
+        FormexaLab3D
+      </h1>
+
+      <!-- Bottone Hamburger -->
+      <button class="menu-toggle text-3xl md:hidden">
+        ☰
+      </button>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex gap-6 font-semibold">
+        <a href="homepage.html" class="hover:text-blue-400 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-400 transition">About us</a>
+        <a href="contact.html" class="hover:text-blue-400 transition">Contatti</a>
+      </nav>
+    </div>
+
+    <!-- Menu Mobile -->
+    <nav class="nav-menu hidden md:hidden flex flex-col gap-3 px-4 pb-4 font-semibold">
+      <a href="homepage.html" class="hover:text-blue-400 transition">Home</a>
+      <a href="about.html" class="hover:text-blue-400 transition">About us</a>
+      <a href="contact.html" class="hover:text-blue-400 transition">Contatti</a>
+    </nav>
+  </header>
+
+
+  <!-- MAIN -->
+  <main class="max-w-6xl mx-auto p-6">
+
+    <!-- INTRO TITOLO -->
+    <section class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3 text-purple-400">
+        Benvenuto nel mondo della Stampa 3D
+      </h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Scopri cos’è la stampa 3D, quali sono i benefici e dove viene utilizzata.
+      </p>
+    </section>
+
+
+    <!-- CARD GRID -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- CARD 1 -->
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold text-blue-400 mb-2">
+          Cos'è la Stampa 3D?
+        </h3>
+        <p class="text-gray-300">
+          La stampa 3D è una tecnologia che consente di creare oggetti tridimensionali
+          a partire da un modello digitale, costruendo strato dopo strato.
+        </p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold text-purple-400 mb-2">
+          Benefici della Stampa 3D
+        </h3>
+        <ul class="text-gray-300 list-disc pl-5 space-y-1">
+          <li>Personalizzazione totale</li>
+          <li>Prototipazione veloce</li>
+          <li>Riduzione dei costi</li>
+        </ul>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold text-green-400 mb-2">
+          Applicazioni
+        </h3>
+        <ul class="text-gray-300 list-disc pl-5 space-y-1">
+          <li>Medicina (protesi e modelli anatomici)</li>
+          <li>Ingegneria (parti complesse)</li>
+          <li>Arte e design</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="text-center text-gray-400 py-6 border-t border-gray-700 mt-10">
+    <p>&copy; 2026 FormexaLab3D. Tutti i diritti riservati.</p>
+  </footer>
+
+
+  <!-- SCRIPT MENU -->
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    toggleButton.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
