@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FormexaLab3D</title>
+  <title>FormexaLab3D - Stampa 3D su Commissione</title>
 
-  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -19,92 +18,112 @@
         FormexaLab3D
       </h1>
 
-      <!-- Bottone Hamburger -->
-      <button class="menu-toggle text-3xl md:hidden">
-        ☰
-      </button>
+      <button class="menu-toggle text-3xl md:hidden">☰</button>
 
-      <!-- Menu Desktop -->
       <nav class="hidden md:flex gap-6 font-semibold">
         <a href="/pages/homepage.html" class="hover:text-blue-400 transition">Home</a>
-        <a href="/pages/about.html" class="hover:text-blue-400 transition">About us</a>
+        <a href="/pages/about.html" class="hover:text-blue-400 transition">About</a>
         <a href="/pages/contact.html" class="hover:text-blue-400 transition">Contatti</a>
       </nav>
     </div>
 
-    <!-- Menu Mobile -->
-    <nav class="nav-menu hidden md:hidden flex flex-col gap-3 px-4 pb-4 font-semibold">
+    <nav class="nav-menu hidden flex flex-col gap-3 px-4 pb-4 font-semibold md:hidden">
       <a href="/pages/homepage.html" class="hover:text-blue-400 transition">Home</a>
-      <a href="/pages/about.html" class="hover:text-blue-400 transition">About us</a>
+      <a href="/pages/about.html" class="hover:text-blue-400 transition">About</a>
       <a href="/pages/contact.html" class="hover:text-blue-400 transition">Contatti</a>
     </nav>
   </header>
 
-
   <!-- MAIN -->
   <main class="max-w-6xl mx-auto p-6">
 
-    <!-- INTRO TITOLO -->
-    <section class="text-center mb-10">
-      <h2 class="text-3xl md:text-4xl font-bold mb-3 text-purple-400">
-        Benvenuto nel mondo della Stampa 3D
+    <!-- HERO -->
+    <section class="text-center py-12">
+      <h2 class="text-3xl md:text-5xl font-bold text-purple-400 mb-4">
+        Stampa 3D su Commissione
       </h2>
-      <p class="text-gray-300 max-w-2xl mx-auto">
-        Scopri cos’è la stampa 3D, quali sono i benefici e dove viene utilizzata.
+
+      <p class="text-gray-300 max-w-2xl mx-auto mb-8 text-lg">
+        Hai un file STL? Lo stampiamo per te con precisione e qualità.
+        Oppure possiamo progettare il tuo oggetto su richiesta.
       </p>
+
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="/pages/contact.html"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-xl transition">
+          Richiedi Preventivo
+        </a>
+
+        <a href="/pages/about.html"
+          class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-xl transition">
+          Scopri di più
+        </a>
+      </div>
     </section>
 
+    <!-- SERVIZI -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
 
-    <!-- CARD GRID -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <!-- CARD 1 -->
       <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-blue-400 mb-2">
-          Cos'è la Stampa 3D?
-        </h3>
+        <h3 class="text-xl font-bold text-blue-400 mb-2">📦 Stampa da STL</h3>
         <p class="text-gray-300">
-          La stampa 3D è una tecnologia che consente di creare oggetti tridimensionali
-          a partire da un modello digitale, costruendo strato dopo strato.
+          Inviaci il tuo file STL e lo stampiamo in base alle tue richieste.
         </p>
       </div>
 
-      <!-- CARD 2 -->
       <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-purple-400 mb-2">
-          Benefici della Stampa 3D
-        </h3>
-        <ul class="text-gray-300 list-disc pl-5 space-y-1">
-          <li>Personalizzazione totale</li>
-          <li>Prototipazione veloce</li>
-          <li>Riduzione dei costi</li>
-        </ul>
+        <h3 class="text-xl font-bold text-purple-400 mb-2">🧩 Progettazione 3D</h3>
+        <p class="text-gray-300">
+          Hai un’idea? Possiamo modellare l’oggetto e poi stamparlo per te.
+        </p>
       </div>
 
-      <!-- CARD 3 -->
       <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-green-400 mb-2">
-          Applicazioni
-        </h3>
-        <ul class="text-gray-300 list-disc pl-5 space-y-1">
-          <li>Medicina (protesi e modelli anatomici)</li>
-          <li>Ingegneria (parti complesse)</li>
-          <li>Arte e design</li>
-        </ul>
+        <h3 class="text-xl font-bold text-green-400 mb-2">⚙️ Personalizzazioni</h3>
+        <p class="text-gray-300">
+          Modifiche, adattamenti, pezzi unici e soluzioni su misura.
+        </p>
       </div>
 
+    </section>
+
+    <!-- COME FUNZIONA -->
+    <section class="mt-16 text-center">
+      <h3 class="text-2xl font-bold text-blue-400 mb-8">Come funziona?</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg">
+          <h4 class="text-lg font-bold mb-2 text-purple-400">1. Invia file / richiesta</h4>
+          <p class="text-gray-300">
+            Compila il modulo e allega il tuo file STL oppure descrivi il progetto.
+          </p>
+        </div>
+
+        <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg">
+          <h4 class="text-lg font-bold mb-2 text-blue-400">2. Ricevi il preventivo</h4>
+          <p class="text-gray-300">
+            Ti rispondiamo con costi, tempi e materiali disponibili.
+          </p>
+        </div>
+
+        <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg">
+          <h4 class="text-lg font-bold mb-2 text-green-400">3. Stampa e consegna</h4>
+          <p class="text-gray-300">
+            Stampiamo il pezzo e lo spediamo o consegniamo.
+          </p>
+        </div>
+
+      </div>
     </section>
 
   </main>
 
-
   <!-- FOOTER -->
   <footer class="text-center text-gray-400 py-6 border-t border-gray-700 mt-10">
-    <p>&copy; 2026 FormexaLab3D. Tutti i diritti riservati.</p>
+    <p>&copy; 2026 FormexaLab3D - Tutti i diritti riservati.</p>
   </footer>
 
-
-  <!-- SCRIPT MENU -->
   <script>
     const toggleButton = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector(".nav-menu");

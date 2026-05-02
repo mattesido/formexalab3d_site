@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us </title>
+  <title>About - FormexaLab3D</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -19,132 +18,79 @@
         FormexaLab3D
       </h1>
 
-      <!-- Bottone Hamburger -->
-      <button class="menu-toggle text-3xl md:hidden">
-        ☰
-      </button>
+      <button class="menu-toggle text-3xl md:hidden">☰</button>
 
-      <!-- Menu Desktop -->
       <nav class="hidden md:flex gap-6 font-semibold">
         <a href="homepage.html" class="hover:text-blue-400 transition">Home</a>
-        <a href="about.html" class="hover:text-blue-400 transition">About us</a>
+        <a href="about.html" class="hover:text-blue-400 transition">About</a>
         <a href="contact.html" class="hover:text-blue-400 transition">Contatti</a>
       </nav>
     </div>
 
-    <!-- Menu Mobile -->
     <nav class="nav-menu hidden flex flex-col gap-3 px-4 pb-4 font-semibold md:hidden">
       <a href="homepage.html" class="hover:text-blue-400 transition">Home</a>
-      <a href="about.html" class="hover:text-blue-400 transition">About us</a>
+      <a href="about.html" class="hover:text-blue-400 transition">About</a>
       <a href="contact.html" class="hover:text-blue-400 transition">Contatti</a>
     </nav>
   </header>
 
-
   <!-- MAIN -->
   <main class="max-w-6xl mx-auto p-6">
 
-    <!-- INTRO -->
-    <section class="text-center mb-12">
+    <section class="text-center py-10">
       <h2 class="text-3xl md:text-4xl font-bold text-purple-400 mb-3">
         Chi siamo
       </h2>
+
       <p class="text-gray-300 max-w-2xl mx-auto">
-        Siamo un progetto dedicato al mondo della stampa 3D. Il nostro obiettivo è
-        condividere conoscenze, curiosità e risorse per aiutare chiunque voglia imparare.
+        FormexaLab3D è un laboratorio dedicato alla stampa 3D, prototipazione e realizzazione
+        di oggetti personalizzati su richiesta.
       </p>
     </section>
 
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
 
-    <!-- SEZIONE DESCRIZIONE -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
-
-      <!-- TESTO -->
       <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg">
-        <h3 class="text-2xl font-bold text-blue-400 mb-3">
-          La nostra missione
-        </h3>
+        <h3 class="text-2xl font-bold text-blue-400 mb-3">La nostra missione</h3>
         <p class="text-gray-300 leading-relaxed">
-          La stampa 3D sta cambiando il modo in cui costruiamo e creiamo oggetti.
-          Il nostro sito nasce per rendere questa tecnologia più accessibile,
-          spiegandola in modo semplice e pratico.
-        </p>
-        <p class="text-gray-300 leading-relaxed mt-4">
-          Qui troverai informazioni utili su stampanti 3D, materiali, tecniche,
-          consigli e applicazioni reali.
+          Il nostro obiettivo è trasformare idee e modelli digitali in oggetti reali.
+          Che tu abbia un file STL pronto o un’idea da progettare, possiamo aiutarti
+          a realizzarla con qualità e precisione.
         </p>
       </div>
 
-      <!-- BOX IMMAGINE (placeholder) -->
-      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg flex justify-center items-center">
-        <p class="text-gray-400 italic text-center">
-      
-           <img src="/assets/A1.jpeg" alt="Stampante 3D" class="text-blue-400">
-            La mia stampante 3D <br>
-        </p>
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg">
+        <h3 class="text-2xl font-bold text-green-400 mb-3">Cosa offriamo</h3>
+        <ul class="text-gray-300 list-disc pl-5 space-y-2">
+          <li>Stampa 3D FDM e pezzi tecnici</li>
+          <li>Oggetti personalizzati e decorativi</li>
+          <li>Prototipi per aziende e privati</li>
+          <li>Modellazione e adattamento STL</li>
+        </ul>
       </div>
 
     </section>
 
-
-    <!-- VALORI / OBIETTIVI -->
-    <section class="mb-12">
-      <h3 class="text-2xl font-bold text-green-400 text-center mb-8">
-        I nostri obiettivi
-      </h3>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
-          <h4 class="text-xl font-bold text-blue-400 mb-2">📚 Informare</h4>
-          <p class="text-gray-300">
-            Spiegare in modo chiaro cos’è la stampa 3D e come funziona.
-          </p>
-        </div>
-
-        <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
-          <h4 class="text-xl font-bold text-purple-400 mb-2">🛠 Aiutare</h4>
-          <p class="text-gray-300">
-            Dare consigli pratici per chi vuole iniziare e migliorare.
-          </p>
-        </div>
-
-        <div class="bg-gray-900/70 border border-gray-700 rounded-2xl p-6 shadow-lg hover:scale-105 transition">
-          <h4 class="text-xl font-bold text-green-400 mb-2">🚀 Ispirare</h4>
-          <p class="text-gray-300">
-            Mostrare applicazioni reali e idee creative da realizzare con la stampa 3D.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CALL TO ACTION -->
-    <section class="text-center bg-gray-900/70 border border-gray-700 rounded-2xl p-8 shadow-lg">
+    <section class="mt-14 text-center bg-gray-900/70 border border-gray-700 rounded-2xl p-8 shadow-lg">
       <h3 class="text-2xl font-bold text-blue-400 mb-3">
-        Vuoi saperne di più?
+        Hai un progetto da realizzare?
       </h3>
       <p class="text-gray-300 mb-6">
-        Contattaci per domande, curiosità o collaborazioni.
+        Inviaci la tua richiesta e riceverai un preventivo personalizzato.
       </p>
 
       <a href="contact.html"
-         class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-xl transition">
-        Vai alla pagina Contatti
+        class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-xl transition">
+        Vai ai Contatti
       </a>
     </section>
 
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="text-center text-gray-400 py-6 border-t border-gray-700 mt-10">
-    <p>&copy; 2026 FormexaLab3D. Tutti i diritti riservati.</p>
+    <p>&copy; 2026 FormexaLab3D - Tutti i diritti riservati.</p>
   </footer>
 
-
-  <!-- SCRIPT MENU -->
   <script>
     const toggleButton = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector(".nav-menu");
